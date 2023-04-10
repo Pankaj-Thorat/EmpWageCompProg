@@ -19,7 +19,6 @@ namespace EmpWageCompProg
             if(empAttendence == 0) 
             {
                 Console.WriteLine("Employee is Present");
-
             }
             else
             {
