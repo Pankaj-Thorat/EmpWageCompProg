@@ -16,7 +16,7 @@ namespace EmpWageCompProg
             int empDailyWage = 0;
             //Welcome message
             Console.WriteLine("Welcome to Employee Wage Comp Prob Statement");
-            //UC1-ifPresentOrNot
+            //UC2-dailyWage
             Random random = new Random();
             int empAttendence = random.Next(0, 2);
             if(empAttendence == 0) 
