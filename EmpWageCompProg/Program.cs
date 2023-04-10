@@ -23,7 +23,6 @@ namespace EmpWageCompProg
             {
                 Console.WriteLine("Employee is Present");
                 empHrs = 8;
-
             }
             else
             {
