@@ -31,11 +31,9 @@ namespace EmpWageCompProg
                     case isFullTime:
                         empHrs = 8;
                         break;
-
                     case isPartTime:
                         empHrs = 4;
                         break;
-
                     default:
                         empHrs = 0;
                         break;
