@@ -17,14 +17,13 @@ namespace EmpWageCompProg
             int empDailyWage = 0;
             //Welcome message
             Console.WriteLine("Welcome to Employee Wage Comp Prob Statement");
-            //UC1-ifPresentOrNot
+            //UC3-PartTimeWageCalculation
             Random random = new Random();
             int empAttendence = random.Next(0, 3);
             if(empAttendence == isFullTime) 
             {
                 Console.WriteLine("Employee is FullTime ");
                 empHrs = 8;
-
             }
             else if (empAttendence == isPartTime)
             {
