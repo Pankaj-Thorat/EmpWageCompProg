@@ -18,7 +18,7 @@ namespace EmpWageCompProg
             int empDailyWage = 0;
             //Welcome message
             Console.WriteLine("Welcome to Employee Wage Comp Prob Statement");
-            //UC1-ifPresentOrNot
+            //UC4-Used switch case
             Random random = new Random();
             int empAttendence = random.Next(0, 3);
             switch (empAttendence) 
@@ -27,12 +27,10 @@ namespace EmpWageCompProg
                     Console.WriteLine("Employee is FullTime ");
                     empHrs = 8;
                     break;
-
                 case isPartTime:
                     Console.WriteLine("Employee is PartTime ");
                     empHrs = 4;
                     break;
-
                 default:
                     Console.WriteLine("Employee is Absent");
                     break;
