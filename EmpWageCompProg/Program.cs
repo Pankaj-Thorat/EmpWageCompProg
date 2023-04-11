@@ -22,11 +22,12 @@ namespace EmpWageCompProg
             int totalWorkingDays = 0;
             //Welcome message
             Console.WriteLine("Welcome to Employee Wage Comp Prob Statement");
+            Random random = new Random();
             //UC6-monthlyWageTillCondition
             while (totalWorkingDays < numberOfWorkingDays && totalEmpHrs < maxHrsInMonth )
             {
                 totalWorkingDays++;
-                Random random = new Random();
+               
                 int empAttendence = random.Next(0, 3);
                 switch (empAttendence)
                 {
