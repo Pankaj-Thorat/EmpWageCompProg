@@ -16,39 +16,8 @@ namespace EmpWageCompProg
 
         static void Main(string[] args)
         {
-            int totalEmpHrs = 0;
-            int empHrs = 0;   
-            int totalEmpWage = 0;
-            int totalWorkingDays = 0;
-            //Welcome message
-            Console.WriteLine("Welcome to Employee Wage Comp Prob Statement");
-            Random random = new Random();
-            //UC6-monthlyWageTillCondition
-            while (totalWorkingDays < numberOfWorkingDays && totalEmpHrs < maxHrsInMonth )
-            {
-                totalWorkingDays++;
-               
-                int empAttendence = random.Next(0, 3);
-                switch (empAttendence)
-                {
-                    case isFullTime:
-                        empHrs = 8;
-                        break;
-
-                    case isPartTime:
-                        empHrs = 4;
-                        break;
-
-                    default:
-                        empHrs = 0;
-                        break;
-                }
-                int empDailyWage = empHrs * empWageRate;
-                totalEmpWage += empDailyWage;
-                totalEmpHrs += empHrs;
-                Console.WriteLine("total wage:" + totalEmpWage + "for "+ totalWorkingDays +" days and "+ totalEmpHrs +"hrs");
-            }
-            Console.WriteLine("Employee Total wage for {0} days and {1}hrs is {2} rs", totalWorkingDays,totalEmpHrs, totalEmpWage);
+            Employee employee = new Employee();
+            employee.EmployeeWage();
         }
     }
 }
